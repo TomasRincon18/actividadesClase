@@ -1,0 +1,166 @@
+<!--COMENTARIOS HTML-->
+<!-- Atajo: Ctrl + / -->
+<!-- <x> apertura </x> cierre -->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  
+    <meta charset="UTF-8">
+
+    <!-- Titulos y descripciones meta -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Tomas Rincon">
+    <meta name="keywords" content="joyas, joyeria, oro, joyas en oro">
+    <meta name="description" content="Pagina de compra de joyas">
+
+    <!-- Link a mis estilos -->
+    <!-- href = donde especifico las rutas de mis estilos -->
+
+    <link rel="stylesheet" href="./styles/index.css">
+
+    <!-- Link favicon/logo en la pestaña del navegador -->
+
+    <link rel="shortcut icon" href="./assets/icon_553213d98a543144a327b53b0174dc1c.ico" type="image/x-icon">
+
+    <!-- Link Bootstrap Icons -->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <title>Proyecto joyería</title>
+
+</head>
+<body>
+
+    <!-- Inicio encabezado de pagina -->
+   
+    <header>
+        
+        <!-- Menu de navegacion (nav) -->
+
+        <nav>
+
+            <!-- Siempre se manejan con listas -->
+            <!-- Listas Ordenadas = ol -->
+            <!-- Listas Desordenadas = ul -->
+            <!-- Cada lista tiene su elemento -> Etiqueta = li -->
+
+            <!-- <ol>
+                <li>Elemento 1</li>
+                <li>Elemento 2</li>
+                <li>Elemento 3</li>
+            </ol> -->
+
+            <!-- Etiqueta de separacion = hr -->
+
+            <!-- <hr> -->
+
+            <ul>
+
+                <!-- Etiqueta para redireccionar = a -->
+                <!-- Texto descriptivo de la imagen/Texto alternativo = alt -->
+                <!-- Ruta de imagen/source/fuente = src -->
+
+                <li><a href="#">Seccion 1</a></li>
+                <li><a href="#">Seccion 2</a></li>
+                <li><a href="./index.html"><img src="./assets/logoemerald.png" alt="logo"></a></li>
+                <li><a href="#">Seccion 3</a></li>
+                <li><a href="#">Seccion 4</a></li>
+
+            </ul>
+            
+        </nav>
+
+        <!-- Seccion banner -->
+
+        <section>
+            <img src="./assets/banner.jp" alt="banner-libros">
+        </section>
+    
+    </header>
+
+    <!-- Contenido de la pagina -->
+
+    <main>
+
+        <!-- Seccion Informativa 1 -->
+        <!-- Section = Divide contenidos -->
+
+        <section>
+
+            <!-- Etiquetas semanticas = Estructura del codigo -->
+            <!-- h = Etiquetas para titulos -->
+            <!-- h1 = Titulo Principal (Solo 1 por pagina web) -->
+            <!-- h2 = Titulos de secciones -->
+            <!-- h3 -> h6 = Subtitulos -->
+            <!-- p = Parrafos -->
+            <!-- lorem = Texto falso -->
+            <!-- iframe = Consumir elementos como videos, mapas, imagenes (Contenido de otros sitios web) -->
+            <!-- Etiquetas no semanticas = Puede contener cualquier cosa / Solo para estilos -->
+            <!-- div (No semantica) = Contenedor de elementos -->
+            <!-- span = Hacer modificaciones especificas -->
+
+            <h1>Prueba Titulo</h1>
+            <div>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/2p6O7EmroEs?si=o5zsoGNq-8HxVrGR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+
+        </section>
+
+        <!-- Seccion Informativa 2 -->
+
+        <section>
+            <h2>Titulo seccion</h2>
+            <div>
+                <img src="./assets/logoemerald.png" alt="">
+                <img src="./assets/logoemerald.png" alt="">
+                <img src="./assets/logoemerald.png" alt="">
+                <img src="./assets/logoemerald.png" alt="">
+                <img src="./assets/logoemerald.png" alt="">
+                <img src="./assets/logoemerald.png" alt="">
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Inicio de el pie de pagina -->
+
+    <footer>
+
+        <!-- Division de contenido contactenos -->
+
+        <div>
+            <h3>Contacto</h3>
+            <ol>
+                <li>Telefono:39278132</li>
+                <li>prueba@gmail.com</li>
+                <li>@Pruebas</li>
+            </ol>
+        </div>
+
+        <!-- Division de contenido logo -->
+
+        <div>
+            <img src="./assets/logoemerald.png" alt="logo">
+        </div>
+
+        <!-- Division de contenido redes sociales -->
+        <!-- Article = Contenedor de elementos que se relacionan -->
+
+        <article>
+            <h3>Redes Sociales</h3>
+            <div>
+
+                <!-- i = Iconos -->
+
+                <a href="https://www.facebook.com/?locale=es_LA"><i class="bi bi-facebook"></i></a>
+                <a href="https://web.whatsapp.com/"><i class="bi bi-whatsapp"></i></a>
+                <a href="https://www.instagram.com/"><i class="bi bi-instagram"></i></a>  
+
+            </div>
+        </article>
+
+    </footer>
+</body>
+</html>
