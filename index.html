@@ -39,7 +39,7 @@
         
         <!-- Menu de navegacion (nav) -->
 
-        <nav>
+        <nav class="menuNav">
 
             <!-- Siempre se manejan con listas -->
             <!-- Listas Ordenadas = ol -->
@@ -56,7 +56,7 @@
 
             <!-- <hr> -->
 
-            <ul>
+            <ul class="listaMenu">
 
                 <!-- Etiqueta para redireccionar = a -->
                 <!-- Texto descriptivo de la imagen/Texto alternativo = alt -->
@@ -64,7 +64,7 @@
 
                 <li><a href="#">Seccion 1</a></li>
                 <li><a href="#">Seccion 2</a></li>
-                <li><a href="./index.html"><img src="./assets/logoemerald.png" alt="logo"></a></li>
+                <li><a href="./index.html"><img class="logo" src="./assets/logoemerald.png" alt="logo"></a></li>
                 <li><a href="#">Seccion 3</a></li>
                 <li><a href="#">Seccion 4</a></li>
 
@@ -74,8 +74,8 @@
 
         <!-- Seccion banner -->
 
-        <section>
-            <img src="./assets/banner.jp" alt="banner-libros">
+        <section class="banner">
+            <img src="./assets/banner.jpg" alt="banner-libros">
         </section>
     
     </header>
@@ -87,7 +87,7 @@
         <!-- Seccion Informativa 1 -->
         <!-- Section = Divide contenidos -->
 
-        <section>
+        <section class="seccion1">
 
             <!-- Etiquetas semanticas = Estructura del codigo -->
             <!-- h = Etiquetas para titulos -->
@@ -101,18 +101,25 @@
             <!-- div (No semantica) = Contenedor de elementos -->
             <!-- span = Hacer modificaciones especificas -->
 
-            <h1>Prueba Titulo</h1>
-            <div>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/2p6O7EmroEs?si=o5zsoGNq-8HxVrGR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <h1 class="titulo">Prueba Titulo</h1>
+            <div id="divVideo">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/4wulhMus5zo?si=HJMfXOxOyR3BUxK7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae commodi quam nisi necessitatibus sunt officia dolorum animi deleniti quas enim numquam non sed et assumenda in facilis optio, magni amet.
+                Facere officia, aut ipsam nobis quis sequi iusto quaerat, dolor accusamus soluta, quas et. Odit adipisci maxime placeat, doloremque eius distinctio a sint omnis cumque, sit rerum inventore minima doloribus?
+                Nisi repellat in harum quae, maxime nemo sunt. Ipsam possimus cupiditate quis voluptate numquam accusantium obcaecati tenetur ab, nemo amet incidunt nulla porro reiciendis exercitationem culpa perspiciatis dolorem blanditiis cum.
+                Exercitationem facilis autem, eaque excepturi perferendis laudantium unde. Tenetur quae eligendi accusantium fugit velit soluta assumenda corporis tempore repellendus? Enim laudantium soluta eveniet asperiores accusamus nulla deleniti id voluptate recusandae.
+                Delectus necessitatibus quam, itaque consequatur, quos est sunt nesciunt, maiores perspiciatis repellat quisquam exercitationem odit dolorum vitae nulla ducimus voluptate. Voluptate ratione, dicta saepe qui sapiente doloribus ullam quisquam omnis.
+                Pariatur, saepe? Temporibus commodi eaque aspernatur necessitatibus, nulla sit exercitationem sint eos facilis illo laboriosam. Saepe unde quas provident magnam dolore sit cum, est iure harum! Ab est veniam sint?
+                Similique perferendis consequatur illo officia totam nisi fuga fugit libero odit id praesentium quae sint nemo tempore eum dolorum doloremque aperiam consectetur vitae non qui perspiciatis, molestiae obcaecati maxime! Adipisci?</p>
             </div>
 
         </section>
 
         <!-- Seccion Informativa 2 -->
 
-        <section>
-            <h2>Titulo seccion</h2>
-            <div>
+        <section class="seccion2">
+            <h2 class="titulo">Titulo seccion</h2>
+            <div class="contenedorImg">
                 <img src="./assets/logoemerald.png" alt="">
                 <img src="./assets/logoemerald.png" alt="">
                 <img src="./assets/logoemerald.png" alt="">
