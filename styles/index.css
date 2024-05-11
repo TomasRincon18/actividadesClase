@@ -25,8 +25,9 @@
     --tipografia: 'Readiness', sans-serif;
     --colorFondo: #bababa;
     --colorClaro: #05bffd;
-    --colorTexto: #2A4BDB;
-    --colorContraste: #932ADB;                                       
+    --colorTexto: #7083d4;
+    --colorContraste: #932ADB; 
+    --colorMenu: #10333e;                                      
 }
 
 /* Condiciones iniciales */
@@ -64,7 +65,7 @@ header{
 }
 
 .menuNav{
-    background-color: #7ca4b2;
+    background-color: var(--colorMenu);
     width: 100%;
     height: 12%;
 }
@@ -85,13 +86,13 @@ header{
 .listaMenu a{
     /* Quitar decoracion del texto */
     text-decoration: none;
-    color: var(--colorTexto);
+    color: white;
     font-size: 18px;
     font-weight: bold;
 }
 
 .listaMenu a:hover{
-    color: whitesmoke;
+    color: #237993;
 }
 
 .logo{
@@ -176,3 +177,31 @@ main{
 
 /* ----- FOOTER ----- */
 
+footer{
+    width: 100%;
+    height: auto;
+    background-color: var(--colorMenu);
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+}
+
+.logo2{
+    width: 125px;
+    height: 125px;
+}
+
+.redesSociales{
+    text-align: center;
+}
+
+.redesSociales i{
+    color: white;
+    font-size: 25px;
+}
+
+.redesSociales i:hover{
+    color: #237993;
+}
