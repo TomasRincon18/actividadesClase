@@ -111,13 +111,11 @@ header{
 /* MAIN */
 
 main{
-    border: 5px solid white;
     width: 100%;
     padding: 100px;
 }
 
 .contenedorPrincipal{
-    border: 5px solid red;
     font-family: var(--textContent);
 }
 
