@@ -1,0 +1,128 @@
+/* Variables */
+
+:root{
+    
+    --colorFondo: beige;
+    --colorClaro: lightsalmon;
+    --colorEnfasis: rgb(3, 126, 120);
+    --tipografia: 'Arial Narrow', Arial, sans-serif;
+
+}
+
+/* Condiciones inciales */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;    
+}
+
+body{
+    background-color: var(--colorFondo);
+    font-family: var(--tipografia);
+    font-size: 25px;
+    overflow-x: hidden;
+}
+
+/* HEADER */
+
+header{
+    width: 100vw;
+    height: 100vh;
+}
+
+.titulo{
+    height: 100px;
+    width: 100%;
+    background-color: var(--colorEnfasis);
+    display: grid;
+    place-content: center;
+    color: var(--colorFondo);
+}
+
+.contenedorSlider{
+    border: 5px solid var(--colorEnfasis);
+    width: 1000px;
+    height: 500px;
+    margin: 100px auto;
+    overflow-x: hidden;
+}
+
+.slider{
+    width: 100%;
+    height: 100%;
+    display: flex;
+
+    /* Nombre que se conecta con el keyframe */
+    animation-name: slide;
+    /* animation-name: rotate; */
+    /* animation-name: scale; */
+
+    /* Tiempo de duracion */
+    animation-duration: 10s;
+
+    /* Cuantas veces se repite la animacion */
+    animation-iteration-count: infinite;
+
+    /* Forma en que se llama el movimiento */
+    animation-timing-function: ease-in-out;
+
+    /* Direccion de mi animacion */
+    animation-direction: alternate-reverse;
+}
+
+@keyframes slide {
+    from{
+        transform: translateX(0%);
+    }
+    25%{
+        transform: translateX(-75%);
+    }
+    50%{
+        transform: translateX(-150%);
+    }
+    75%{
+        transform: translateX(-225%);
+    }
+    to{
+        transform: translateX(-300%);
+    }    
+}
+
+@keyframes rotate {
+    from{
+        transform: rotate(0%);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes scale {
+    from{
+        transform: scale(0.5);
+    }
+    to{
+        transform: scale(1.5);
+    }
+}
+
+.contenedorSlider img{
+    width: 100%;
+    height: 100%;
+}
+
+/* MAIN */
+
+
+
+/* FOOTER */
+
+footer{
+    height: 150px;
+    width: 100%;
+    background-color: var(--colorEnfasis);
+    display: grid;
+    place-content: center;
+    color: var(--colorFondo);
+}
