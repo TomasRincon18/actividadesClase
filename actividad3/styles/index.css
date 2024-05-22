@@ -28,22 +28,29 @@ body{
 
 header{
     width: 100vw;
-    height: 100vh;
+    height: auto;
 }
 
 .titulo{
-    height: 100px;
+    height: 150px;
     width: 100%;
     background-color: var(--colorEnfasis);
     display: grid;
     place-content: center;
     color: var(--colorFondo);
+    transition: all 500ms ease-in-out;
+}
+
+.titulo:active{
+    background-color: brown;
+    color: chartreuse;
+    transform: scale(1.2);
 }
 
 .contenedorSlider{
     border: 5px solid var(--colorEnfasis);
-    width: 1000px;
-    height: 500px;
+    width: 75%;
+    height: 65vh;
     margin: 100px auto;
     overflow-x: hidden;
 }
@@ -68,7 +75,7 @@ header{
     animation-timing-function: ease-in-out;
 
     /* Direccion de mi animacion */
-    animation-direction: alternate-reverse;
+    animation-direction: alternate;
 }
 
 @keyframes slide {
@@ -89,23 +96,23 @@ header{
     }    
 }
 
-@keyframes rotate {
+/* @keyframes rotate {
     from{
         transform: rotate(0%);
     }
     to{
         transform: rotate(360deg);
     }
-}
+} */
 
-@keyframes scale {
+/* @keyframes scale {
     from{
         transform: scale(0.5);
     }
     to{
         transform: scale(1.5);
     }
-}
+} */
 
 .contenedorSlider img{
     width: 100%;
@@ -114,7 +121,37 @@ header{
 
 /* MAIN */
 
+main{
+    display: flex;
+    justify-content: center;
+}
 
+.contenido{
+    border: 5px solid var(--colorEnfasis);
+    width: 75%;
+    height: auto;
+    margin-bottom: 100px;
+}
+
+.tituloSecundario{
+    text-align: center;
+    padding: 25px;
+}
+
+.imgParrafo{
+    display: flex;
+    gap: 45px;
+    padding: 15px;
+    align-items: center;
+}
+
+.imgParrafo img{
+    width: 50%;
+}
+
+.imgParrafo p{
+    width: 50%;
+}
 
 /* FOOTER */
 
@@ -125,4 +162,51 @@ footer{
     display: grid;
     place-content: center;
     color: var(--colorFondo);
+}
+
+/* DISEÑO RESPONSIVE */
+
+/* 
+    1) Trabajar en % (medidas no fijas) de una vez
+    2) Media Queries
+*/
+
+
+
+/* MEDIA QUERIES */
+/* 
+    Permiten cambiar la apariencia de mis elementos en función de el tamaño de mi pantalla
+
+    Dimensión min PC = 1200px en adelante
+    Dimensión para tablet = 500px -> 1024px
+    Dimensiones de celular = 320 -> 490px
+
+*/
+
+/* Estilos para mi celular */
+
+
+/* Estilos nuevos según los px que yo defina */
+
+
+@media screen and (max-width:490px) {
+
+    .titulo{
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .imgParrafo{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .imgParrafo img{
+        width: 100%;
+    }
+
+    .imgParrafo p{
+        width: 100%;
+    }
+
 }
